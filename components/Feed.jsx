@@ -6,7 +6,7 @@ const PromptCardList = ({ data, handleTagClick, searchByUserName }) => {
   return (
     <>
       <div className="mt-16 w-full gap-4 prompt_layout">
-        {data.map((post) => (
+        {data?.map((post) => (
           <PromptCard
             key={post._id}
             post={post}
